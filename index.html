@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUIZBOX</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+  <body>
+    <div class="first-head-position">
+      <div class="head-content first-head-content">
+        <div class="question-box">
+          <h2>Które państwo jest największe pod względem powierzchni?</h2>
+        </div>
+        <div class="answer-boxes">
+          <div class="answer-box">
+            <button class="btn-style btn-style-hover">Kanada</button>
+          </div>
+          <div class="answer-box">
+            <button class="btn-style btn-style-hover">Chiny</button>
+          </div>
+          <div class="answer-box">
+            <button class="btn-style btn-style-hover" data-answer="correct">Rosja</button>
+          </div>
+          <div class="answer-box">
+            <button class="btn-style btn-style-hover">Stany zjednoczone</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second-head-position">
+      <div class="head-content second-head-content">
+        <div class="question-box">
+          <h2>Ile wynosi pierwiastek kwadratowy z 144?</h2>
+        </div>
+        <div class="answer-boxes">
+          <div class="answer-box">
+            <button class="btn-style">10</button>
+          </div>
+          <div class="answer-box">
+            <button class="btn-style" data-answer="correct">12</button>
+          </div>
+          <div class="answer-box">
+            <button class="btn-style">14</button>
+          </div>
+          <div class="answer-box">
+            <button class="btn-style">16</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="third-head-position">
+      <div class="head-content third-head-content">
+        <div class="question-box">
+          <h2>Który pierwiastek chemiczny ma symbol "O"?</h2>
+        </div>
+        <div class="answer-boxes">
+          <div class="answer-box">
+            <button class="btn-style">Ołów</button>
+          </div>
+          <div class="answer-box">
+            <button class="btn-style">Osm</button>
+          </div>
+          <div class="answer-box">
+            <button class="btn-style" data-answer="correct">Tlen</button>
+          </div>
+          <div class="answer-box">
+            <button class="btn-style">Oganesson</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="four-head-position">
+      <div class="head-content four-head-content">
+        <div class="question-box">
+          <h2>Kto namalował "Mona Lisę"?</h2>
+        </div>
+        <div class="answer-boxes">
+          <div class="answer-box">
+            <button class="btn-style">Vincent van Gogh</button>
+          </div>
+          <div class="answer-box">
+            <button class="btn-style">Pablo Picasso</button>
+          </div>
+          <div class="answer-box">
+            <button class="btn-style" data-answer="correct">Leonardo da Vinci</button>
+          </div>
+          <div class="answer-box">
+            <button class="btn-style">Rembrandt</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="results-container">
+      <div class="results">
+        <h1>WYNIKI</h1>
+        <p>Dziekujemy za rozwiązanie quizu z wiedzy ogólnej!</p>
+        <p>Twoja liczba punktów to:</p>
+        <h2 class="points"></h2>
+        <button class="reloadQuiz">Zagraj jeszcze raz</button>
+      </div>
+    </div>
+    <script src="./Scripts/main.js"></script>
+    <script src="./Scripts/animation.js"></script>
+  </body>
+</html>

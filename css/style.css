@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/background-image.jpg);
+    background-size: cover;
+}
+
+.first-head-position,
+.second-head-position,
+.third-head-position,
+.four-head-position{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.second-head-position,
+.third-head-position,
+.four-head-position{
+    display: none;
+}
+
+
+.first-head-content,
+.second-head-content,
+.third-head-content,
+.four-head-content{
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+    transition: opacity 1.25s ease-in, top 1s ease-in;
+}
+
+.showQuestions{
+    top: 15%;
+    opacity: 1;
+}
+
+.hideQuestions{
+    top: -100%;
+    opacity: 0;
+}
+
+
+
+
+
+.head-content .question-box{
+    background-color: transparent;
+    background-color: rgb(0 0 0 / 0.3);
+    border: solid 3px black;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+ .head-content .question-box h2{
+    color: rgb(255,255,255);
+    padding: 50px;
+    font-family: "Poppins", serif;
+}
+
+.answer-boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answer-box{
+    width: 75%;
+}
+
+ .btn-style{ 
+    background-color: transparent;
+    background-color: rgb(0 0 0 / 0.3);
+    padding: 30px;
+    margin: 10px;
+    border: solid 3px black;
+    width: 100%;
+    border-radius: 30px;
+    font-family: "Poppins", serif;
+    color: rgb(255,255,255);
+    font-size: 120%;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn-style:hover{
+    background-color: rgb(0 0 0 / 0.7);
+    transform: scale(1.1);
+}
+
+.correct-answer{
+    background-color: transparent;
+    background-color: rgba(0, 255, 0, 0.678);
+    padding: 30px;
+    margin: 10px;
+    border: solid 3px black;
+    width: 100%;
+    border-radius: 30px;
+    font-family: "Poppins", serif;
+    color: rgb(255,255,255);
+    font-size: 120%;
+    transition: transform 0.5s ease-in-out, background-color 1s ease-in;
+    transform: scale(0.95);
+}
+
+
+
+
+.incorrect-answer {
+    background-color: transparent;
+    background-color: rgba(192, 4, 4, 0.747);
+    padding: 30px;
+    margin: 10px;
+    border: solid 3px black;
+    width: 100%;
+    border-radius: 30px;
+    font-family: "Poppins", serif;
+    color: rgb(255,255,255);
+    font-size: 120%;
+    transition: transform 0.5s ease-in-out, background-color 1s ease-in;
+    transform: scale(1.1);
+}
+
+
+.results-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform 1s ease-in-out;
+}
+
+.showLastPage{
+    transform: scale(1);
+}
+
+.results-container{
+    display: none;
+}
+
+.results{
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255 215 0 / 0.3);
+    border: 3px solid rgb(255, 215, 0);
+    padding: 10%;
+    border-radius: 30px;
+}
+
+.results h1{
+    color: rgb(255,255,255);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.results p{
+    text-align: center;
+    color: rgb(255,255,255);
+    font-family: "Poppins", sans-serif;
+}
+
+.points{
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 150%;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 215, 0);
+}
+
+.reloadQuiz{
+    cursor: pointer;
+    position: absolute;
+    z-index: -1;
+    top: 70%;
+    padding: 10px;
+    background-color: rgb(255,215,0);
+    border: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-family: "Poppins", sans-serif;
+    color: rgb(255,100,0);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.reloadQuiz:hover{
+    transform: scale(0.9);
+    box-shadow: 1px 1px 10px white;
+}
