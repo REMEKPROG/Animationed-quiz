@@ -16,13 +16,6 @@ Scripts/animation.js – Animation effects for transitions between questions.
 
 img/ – A directory storing images used in the application (e.g., quiz background).
 
-How to Run the Project?
-
-Download the repository or clone it to your computer:
-
-git clone https://github.com/USERNAME/QUIZBOX.git
-
-Open the index.html file in a web browser.
 
 Features
 
